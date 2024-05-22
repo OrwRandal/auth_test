@@ -9,7 +9,7 @@ exports.seed = async (knex) => {
 
   await knex.raw('ALTER SEQUENCE users_id_seq RESTART WITH 1');
 
-  await User.create('cool_cat', '1234');
-  await User.create('l33t-guy', '1234');
-  await User.create('wowow', '1234');
+  await User.create('cool_cat', '1234', 'Hey, im just a silly boy', 'https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg', 'Randy', 'Pichardo');
+  await User.create('l33t-girl', '1234', 'LEET GOATED IS GOATED RUAHHHH', 'https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg', 'Bob', 'Richardson');
+  await User.create('wowow', '1234', 'We up fr, 2024 is my year', 'https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg', 'Samantha', 'Charles');
 };
